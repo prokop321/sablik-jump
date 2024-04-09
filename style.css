@@ -1,0 +1,55 @@
+.sablik {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  height: 8vh;
+  transition: bottom 50ms;
+  width: 8vh;
+  background-color: blue;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sablik > img {
+  width: 100%;
+  height: 100%;
+}
+#game {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: red;
+  background-image: url("https://www.ssps.cz/wp-content/uploads/2020/07/school.jpg");
+  background-size: cover;
+}
+
+.obstacle:nth-child(1),
+.obstacle:nth-child(2) {
+  width: 40px;
+  position: absolute;
+}
+
+.obstacle {
+  height: 100%;
+  transition: 50ms;
+  position: absolute;
+}
+
+.top,
+.bottom {
+  background-color: green;
+  position: absolute;
+  width: 40px;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
